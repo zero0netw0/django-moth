@@ -10,7 +10,7 @@ RUN apt-get install -y supervisor joe
 RUN apt-get install -y libssl-dev libxml2-dev libxslt1-dev libmemcached-dev
 RUN apt-get install -y git-core python-pip build-essential python-dev python-software-properties
 
-RUN pip install supervisor-stdout==0.1.1
+RUN pip install supervisor-stdout
 
 RUN mkdir -p /var/log/supervisor
 RUN useradd ubuntu -d /home/ubuntu
